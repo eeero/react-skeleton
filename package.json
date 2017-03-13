@@ -2,10 +2,9 @@
   "name": "react-skeleton",
   "version": "0.0.1",
   "scripts": {
-    "start:dev": "NODE_ENV=development node server.js",
+    "start:dev": "NODE_ENV=development && webpack-dev-server",
     "start": "NODE_ENV=production node server.js",
-    "postinstall": "webpack -p --config webpack.config.js && mkdir -p dist/img && cp assets/img/* dist/img",
-    "webpackdevserver": "webpack-dev-server"
+    "postinstall": "webpack -p --config webpack.config.js && mkdir -p dist/img && cp assets/img/* dist/img"
   },
   "engines": {
     "node": ">= 6.0.0",
